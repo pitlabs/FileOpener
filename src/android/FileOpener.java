@@ -6,7 +6,7 @@
 * Copyright (c) 2011, IBM Corporation
 */
 
-package com.phonegap.plugins.fileopenerandroid;
+package com.phonegap.plugins.fileopener;
 
 import java.io.IOException;
 import java.net.URLConnection;
@@ -14,6 +14,7 @@ import java.net.URLConnection;
 import org.apache.cordova.api.CallbackContext;
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import android.content.Intent;
 import android.net.Uri;
