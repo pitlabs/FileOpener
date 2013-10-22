@@ -6,12 +6,12 @@
 * Copyright (c) 2011, IBM Corporation
 */
 
-package com.phonegap.plugins;
+package de.rwthaachen.rz.rwthapp.plugins;
 
 import java.io.IOException;
 import java.net.URLConnection;
 
-import org.apache.cordova.api.CallbackContext;
+import org.apache.cordova.CallbackContext;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -19,7 +19,8 @@ import org.json.JSONObject;
 import android.content.Intent;
 import android.net.Uri;
 
-import org.apache.cordova.api.CordovaPlugin;
+import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.PluginResult;
 
 public class FileOpener extends CordovaPlugin {
 
