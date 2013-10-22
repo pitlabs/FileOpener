@@ -5,7 +5,7 @@ Simple plugin which allows you to open popular files (PDF, WORD, EXCEL, JPG, GIF
 
 Adding the Plugin to your project
 -----------
-    $ cordova plugin add https://github.com/TobiTh/FileOpenerAndroid.git
+    $ phonegap local plugin add https://github.com/TobiTh/FileOpener.git
 
 Using the plugin
 ===========
@@ -14,10 +14,10 @@ The plugin creates the object  ``````window.plugins.fileOpener``````. To use, ca
 Sample use:
 ----------
 ```````javascript
-window.plugins.fileOpener.open("file:///sdcard/Android/data/com.example.application/document.doc");
-window.plugins.fileOpener.open("file:///sdcard/Android/data/com.example.application/manual.pdf");
-window.plugins.fileOpener.open("file:///sdcard/Android/data/com.example.application/presentation.ppt");
-window.plugins.fileOpener.open("file:///sdcard/Android/data/com.example.application/image.jpg");
+window.plugins.fileOpener.open("file:///sdcard/Android/data/com.example.application/document.doc", errorCB);
+window.plugins.fileOpener.open("file:///sdcard/Android/data/com.example.application/manual.pdf", errorCB);
+window.plugins.fileOpener.open("file:///sdcard/Android/data/com.example.application/presentation.ppt", errorCB);
+window.plugins.fileOpener.open("file:///sdcard/Android/data/com.example.application/image.jpg", errorCB);
 ```````
 
 After you run the command above, Android device will either open the file with proper external application installed on your device or ask you which application to use, if you haven't set before which application to use to open the specific type of file. What is great, when you exit the external app, Android will return to your application.
