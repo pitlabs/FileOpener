@@ -1,14 +1,15 @@
 // forked from https://github.com/markeeftb/FileOpener
 
 module.exports = {
-    open: function (url) {
+    open: function (url, failureCB) {
         var success = function() {
         console.log("success!");
         }
         var failure = function(error) {
             console.log(error);
-            failureCB(error);
- 
+	    if(typeof failureCB === "function"){            
+		failureCB(error);
+	    }
         }
         cordova.exec(success, failure, "FileOpener", "openFile", [url]);
     }
