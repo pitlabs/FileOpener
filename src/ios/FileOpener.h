@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <Cordova/CDV.h>
 
-@interface CDVFileOpener : CDVPlugin
+@interface FileOpener : CDVPlugin
 
 - (void)openFile:(CDVInvokedUrlCommand*)command;
 
