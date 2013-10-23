@@ -6,7 +6,7 @@
 * Copyright (c) 2011, IBM Corporation
 */
 
-package de.rwthaachen.rz.rwthapp.plugins.gcm;
+package de.rwthaachen.rz.rwthapp.plugins;
 
 import java.io.IOException;
 import java.net.URLConnection;

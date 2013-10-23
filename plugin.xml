@@ -2,12 +2,12 @@
 <plugin 
     xmlns="http://www.phonegap.com/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android" 
-    id="de.rwthaachen.rz.rwthapp.plugins.FileOpener"
+    id="de.rwthaachen.rz.rwthapp.FileOpener"
     version="0.1.0">
 
     <name>File Opener for Android and iOS</name>
 
-	<asset src="www/FileOpenerPlugin.js" target="FileOpener.js" />
+	<asset src="www/fileopener.js" target="fileopener.js" />
 
 	<engines>
 		<engine name="cordova" version=">=3.0.0" />
@@ -16,11 +16,11 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FileOpener">
-                <param name="android-package" value="de.rwthaachen.rz.rwthapp.plugins.gcm.FileOpener"/>
+                <param name="android-package" value="de.rwthaachen.rz.rwthapp.plugins.FileOpener"/>
 		</feature>
         
         </config-file>
-        <source-file src="src/android/de/rwthaachen/rz/rwthapp/plugins/gcm/FileOpener.java" target-dir="src/de/rwthaachen/rz/rwthapp/plugins/gcm/" />
+        <source-file src="src/android/de/rwthaachen/rz/rwthapp/plugins/FileOpener.java" target-dir="src/de/rwthaachen/rz/rwthapp/plugins/" />
     </platform>
     
     <platform name="ios">

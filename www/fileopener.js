@@ -14,13 +14,8 @@ FileOpenerPlugin.prototype.open = function (url, failureCB) {
 	cordova.exec(success, failure, "FileOpener", "openFile", [url]);
 }
 
-if(!window.plugins){
-	window.plugins = {};
-}
-if(!window.plugins.fileopenerplugin){
-	window.plugins.fileopenerplugin = new FileOpenerPlugin();
-}
-
+var FileOpenerPlugin = new FileOpenerPlugin();
+module.exports = FileOpenerPlugin;
 
 
 
