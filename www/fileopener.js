@@ -1,5 +1,5 @@
 var fileopener = {
-	:open = function (url, failureCB) {
+	open: function (url, failureCB) {
         	var success = function() {
         		console.log("success!");
         	}
