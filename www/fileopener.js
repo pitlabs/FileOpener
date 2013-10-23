@@ -1,7 +1,8 @@
-// forked from https://github.com/markeeftb/FileOpener
+var exec = require(`cordova/exec`);
 
-module.exports = {
-    open: function (url, failureCB) {
+function FileOpener() {};
+
+FileOpener.prototype.open = function (url, failureCB) {
         var success = function() {
         console.log("success!");
         }
@@ -11,6 +12,9 @@ module.exports = {
 		failureCB(error);
 	    }
         }
-        cordova.exec(success, failure, "FileOpener", "openFile", [url]);
-    }
+	exec(success, failure, "FileOpener", "openFile", [url]);
 }
+
+var fileopener = new FileOpener();
+module.exports = fileopener;
+

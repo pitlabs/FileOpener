@@ -12,7 +12,7 @@
     <name>File Opener for Android and iOS</name>
 
     <js-module src="www/fileopener.js" name="FileOpener">
-        <clobbers target="window.plugins.fileOpener" />
+        <clobbers target="fileopener" />
     </js-module>
 
     <platform name="android">
