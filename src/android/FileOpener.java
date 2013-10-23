@@ -25,7 +25,7 @@ import org.apache.cordova.PluginResult;
 public class FileOpener extends CordovaPlugin {
 
     @Override
-    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+    public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
 
         try {
             if (action.equals("openFile")) {
