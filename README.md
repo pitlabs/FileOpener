@@ -9,15 +9,15 @@ Adding the Plugin to your project
 
 Using the plugin
 ===========
-The plugin creates the object  ``````window.plugins.fileOpener``````. To use, call the  ``````open()`````` method:
+The plugin creates the object  ``````window.fileOpener``````. To use, call the  ``````open()`````` method:
 
 Sample use:
 ----------
 ```````javascript
-window.plugins.fileOpener.open("file:///sdcard/Android/data/com.example.application/document.doc", errorCB);
-window.plugins.fileOpener.open("file:///sdcard/Android/data/com.example.application/manual.pdf", errorCB);
-window.plugins.fileOpener.open("file:///sdcard/Android/data/com.example.application/presentation.ppt", errorCB);
-window.plugins.fileOpener.open("file:///sdcard/Android/data/com.example.application/image.jpg", errorCB);
+window.fileOpener.open("file:///sdcard/Android/data/com.example.application/document.doc", errorCB);
+window.fileOpener.open("file:///sdcard/Android/data/com.example.application/manual.pdf", errorCB);
+window.fileOpener.open("file:///sdcard/Android/data/com.example.application/presentation.ppt", errorCB);
+window.fileOpener.open("file:///sdcard/Android/data/com.example.application/image.jpg", errorCB);
 ```````
 
 After you run the command above, Android device will either open the file with proper external application installed on your device or ask you which application to use, if you haven't set before which application to use to open the specific type of file. What is great, when you exit the external app, Android will return to your application.
