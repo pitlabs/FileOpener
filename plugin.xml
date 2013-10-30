@@ -5,7 +5,7 @@
     id="de.rwthaachen.rz.rwthapp.plugins.fileopener"
     version="0.1.0">
 
-    <name>File Opener for Android and iOS</name>
+    <name>File Opener for Android for phonegap >= 3.0.0 </name>
 
 	<engines>
 		<engine name="cordova" version=">=3.0.0" />
@@ -25,14 +25,4 @@
         <source-file src="src/android/FileOpener.java" target-dir="src/de/rwthaachen/rz/rwthapp/plugins/fileopener/" />
     </platform>
     
-    <platform name="ios">
-        <config-file target="config.xml" parent="/*">
-            <feature name="FileOpener">
-                <param name="ios-package" value="FileOpener" />
-            </feature>
-        </config-file>
-        
-        <header-file src="src/ios/FileOpener.h" />
-        <source-file src="src/ios/FileOpener.m" />
-    </platform>
 </plugin>
