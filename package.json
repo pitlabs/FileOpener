@@ -1,0 +1,30 @@
+{
+  "name": "de.rwthaachen.rz.rwthapp.plugins.fileopener",
+  "version": "0.1.1",
+  "description": "Android File Opener Plugin",
+  "cordova": {
+    "id": "de.rwthaachen.rz.rwthapp.plugins.fileopener",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pitlabs/FileOpener"
+  },
+  "keywords": [
+	"file",
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+  ],
+  "engines": {
+    "cordovaDependencies": {
+      "0.1.1": {
+        "cordova": ">=3.0.0"
+      }
+    }
+  },
+  "author": "IT Center, RWTH Aachen University",
+  "license": "MIT"
+}

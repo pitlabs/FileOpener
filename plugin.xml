@@ -3,7 +3,7 @@
     xmlns="http://www.phonegap.com/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android" 
     id="de.rwthaachen.rz.rwthapp.plugins.fileopener"
-    version="0.1.0">
+    version="0.1.1">
 
     <name>File Opener for Android for phonegap >= 3.0.0 </name>
 
