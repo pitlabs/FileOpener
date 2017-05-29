@@ -16,7 +16,7 @@
 	"file",
     "cordova",
     "ecosystem:cordova",
-    "cordova-android",
+    "cordova-android"
   ],
   "engines": {
     "cordovaDependencies": {
