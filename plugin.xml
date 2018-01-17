@@ -3,7 +3,7 @@
     xmlns="http://www.phonegap.com/ns/plugins/1.0" 
     xmlns:android="http://schemas.android.com/apk/res/android" 
     id="de.rwthaachen.rz.rwthapp.plugins.fileopener"
-    version="0.1.1">
+    version="0.2.0">
 
     <name>File Opener for Android for phonegap >= 3.0.0 </name>
 
@@ -19,10 +19,21 @@
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="FileOpener">
                 <param name="android-package" value="de.rwthaachen.rz.rwthapp.plugins.fileopener.FileOpener"/>
-		</feature>
-        
+		    </feature>
         </config-file>
         <source-file src="src/android/FileOpener.java" target-dir="src/de/rwthaachen/rz/rwthapp/plugins/fileopener/" />
+        <source-file src="src/android/FileProvider.java" target-dir="src/de/rwthaachen/rz/rwthapp/plugins/fileopener/" />
+        <source-file src="src/android/file_paths.xml" target-dir="res/xml/" />
+        <config-file target="AndroidManifest.xml" parent="/manifest/application">
+            <provider
+                android:name="de.rwthaachen.rz.rwthapp.plugins.fileopener.FileProvider"
+                android:authorities="$PACKAGE_NAME.opener.provider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+                <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/file_paths" />
+           </provider>
+         </config-file>
     </platform>
-    
 </plugin>
